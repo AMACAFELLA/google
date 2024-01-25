@@ -1,6 +1,7 @@
 import classNames from 'classnames'
 import styles from './LandingFooter.module.scss'
 import { googleLeaf } from '../../content/b64'
+import Image from 'next/image'
 
 export const LandingFooter: React.FC = () => {
   return (
@@ -39,7 +40,7 @@ export const LandingFooter: React.FC = () => {
             href="https://sustainability.google/"
             rel="noopener noreferrer"
           >
-            <img className={styles.googleImg} src={googleLeaf} alt="leaf" />
+            <Image className={styles.googleImg} src={googleLeaf} alt="leaf" />
             Carbon neutral since 2007
           </a>
         </div>
