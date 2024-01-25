@@ -18,7 +18,7 @@ export const searchResults: Content[] = [
     link: 'https://www.sarh.org/',
     image: (
       <Image
-        src="https://scontent-cpt1-1.xx.fbcdn.net/v/t39.30808-6/312807862_797697458230537_3703828040525300332_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=y1T-UQebB7UAX-KduDI&_nc_ht=scontent-cpt1-1.xx&oh=00_AfAycdvvORJDkOKayG3No5DHYPJHldZahkkU-ticCA5ntw&oe=65B0B414"
+        src="https://sarhfiles.blob.core.windows.net/live/images/default-source/about-us/mission-bug417e9a01-44ef-4ef0-be45-36921e6e1338.jpg?sfvrsn=facaa391_3"
         alt="San Antonio Regional Hospital logo"
         priority
         fill
