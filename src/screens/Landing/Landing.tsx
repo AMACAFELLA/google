@@ -1,4 +1,4 @@
-import { LegacyRef, useRef, useCallback, useEffect } from 'react'
+import { LegacyRef, useRef, useCallback } from 'react'
 import {
   LandingHeader,
   Logo,
@@ -6,7 +6,6 @@ import {
   LandingButton,
   LandingFooter,
 } from 'src/components'
-import { sleep } from 'src/utils'
 import classNames from 'classnames'
 
 import styles from './Landing.module.scss'
@@ -23,13 +22,6 @@ export const Landing: React.FC<LandingProps> = ({
   onSearchClick,
 }: LandingProps) => {
   const buttonRef = useRef<HTMLButtonElement>(null)
-
-  const search = useCallback(async () => {
-    await sleep(300)
-    buttonRef.current?.focus()
-    await sleep(400)
-    buttonRef.current?.click()
-  }, [])
 
   const redirectToLucky = useCallback(() => {
     window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'

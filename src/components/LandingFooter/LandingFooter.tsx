@@ -40,7 +40,13 @@ export const LandingFooter: React.FC = () => {
             href="https://sustainability.google/"
             rel="noopener noreferrer"
           >
-            <Image className={styles.googleImg} src={googleLeaf} alt="leaf" />
+            <Image
+              height={14}
+              width={9}
+              className={styles.image}
+              src={googleLeaf}
+              alt="leaf"
+            />
             Carbon neutral since 2007
           </a>
         </div>
