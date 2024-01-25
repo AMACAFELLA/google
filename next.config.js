@@ -9,7 +9,7 @@ const nextConfig = {
       'source.unsplash.com',
       'images.unsplash.com',
       'i1.ytimg.com',
-      'https://sarhfiles.blob.core.windows.net',
+      'sarhfiles.blob.core.windows.net',
       'www.powerchangeslives.com',
       'ph-files.imgix.net',
     ],
