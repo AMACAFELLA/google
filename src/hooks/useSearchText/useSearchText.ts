@@ -6,7 +6,7 @@ export const useSearchText = (delay = 0) => {
 
   const animate = useCallback(async () => {
     const searchTextGenerator = searchTextGeneratorBuilder(
-      "Why can't Git commit to me, for once?",
+      "Why can't Git commit to me?",
       'Angus Macapella'
     )()
 

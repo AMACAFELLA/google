@@ -4,10 +4,6 @@
   @include container;
   justify-content: space-between;
   align-items: center;
-
-  @include mobile {
-    margin-left: 20px;
-  }
 }
 
 .buttons {
@@ -48,8 +44,7 @@
     }
 
     @include mobile {
-      @include row;
-      justify-content: space-between;
+      display: none;
     }
   }
 }
@@ -59,7 +54,6 @@
   display: flex;
 
   @include mobile {
-    gap: 3px;
-    font-size: x-small;
+    display: none;
   }
 }
