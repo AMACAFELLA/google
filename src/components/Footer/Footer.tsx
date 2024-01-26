@@ -8,8 +8,8 @@ export const Footer: React.FC = () => {
         <a href="" target="_blank" rel="noreferrer">
           Source Code
         </a>
-        <br /> I'm not affiliated with Google. Please don&apos;t sue me, hire
-        me.
+        <br /> I&apos;m not affiliated with Google. Please don&apos;t sue me,
+        hire me.
       </div>
     </div>
   )

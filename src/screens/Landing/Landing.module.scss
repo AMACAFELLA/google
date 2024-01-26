@@ -4,6 +4,10 @@
   @include container;
   justify-content: space-between;
   align-items: center;
+
+  @include mobile {
+    margin-left: 20px;
+  }
 }
 
 .buttons {
@@ -31,10 +35,7 @@
 .row {
   @include row;
   justify-content: space-between;
-
   padding: 14px;
-
-  justify-content: space-between;
   flex-wrap: wrap;
   font-size: small;
 
@@ -45,14 +46,10 @@
     &:hover {
       text-decoration: underline;
     }
-  }
 
-  @include mobile {
-    justify-content: center;
-
-    span {
-      padding: 2px;
-      font-size: 9px;
+    @include mobile {
+      @include row;
+      justify-content: space-between;
     }
   }
 }
@@ -60,4 +57,9 @@
 .content {
   gap: 15px;
   display: flex;
+
+  @include mobile {
+    gap: 3px;
+    font-size: x-small;
+  }
 }

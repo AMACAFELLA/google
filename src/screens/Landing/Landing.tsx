@@ -43,7 +43,7 @@ export const Landing: React.FC<LandingProps> = ({
             I&apos;m Feeling Lucky
           </LandingButton>
         </div>
-        <div className={classNames(styles.row, styles.bottom)}>
+        <div className={classNames(styles.row)}>
           <div className={styles.content}>
             Google offered in:
             <a
