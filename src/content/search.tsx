@@ -9,9 +9,9 @@ export const searchResults: Content[] = [
     title: 'San Antonio Regional Hospital | Web Design/Developer Intern',
     description: (
       <>
-        On this week&apos;s episode of Grey&apos;s Antomy, I integrated
-        ADA-compliant features and, as well as implement a web and mobile
-        application for patient education video.
+        On this week&apos;s episode of Grey&apos;s Antomy,I integrated
+        ADA-compliant features and implemented a web and mobile application for
+        patient education videos.
       </>
     ),
     extras: <b>Frontend, Backend, CMS</b>,
@@ -29,10 +29,10 @@ export const searchResults: Content[] = [
     title: 'Power Changes Lives | IT Web Design/Developer Intern',
     description: (
       <>
-        I was promoted to Tech Lead and led two other interns on redesigning the
-        company site with React and Node.js. I also worked with Shopify, Liquid,
-        Python, Make automation, Microsoft Sharepoint, Microsoft Admin, and
-        Ticketing Systems.
+        I was promoted to Tech Lead and led two other interns in redesigning the
+        company site with React and Node.js. Additionally, I worked with
+        Shopify, Liquid, Python, Make automation, Microsoft SharePoint,
+        Microsoft Admin, and Ticketing Systems.
       </>
     ),
     extras: <b>Frontend, Backend, Admin</b>,
@@ -78,8 +78,8 @@ export const searchResults: Content[] = [
     title: 'Macabeats | Software Engineer',
     description: (
       <>
-        Fictional ecommerce store implemented using Next JS, Sanity and Stripe
-        processing payment.
+        Fictional e-commerce store implemented using Next.js, Sanity, and Stripe
+        for processing payments.
       </>
     ),
     extras: (
@@ -93,9 +93,9 @@ export const searchResults: Content[] = [
     title: 'Portfolio-Verse | Software Enigeer',
     description: (
       <>
-        Really enjoyed Across the Spider-Verse and wanted to become my own
-        version of Spider-Man. I implemented vanilla HTML, CSS, Javascript and
-        PhotoShop.
+        I really enjoyed &quot;Across the Spider-Verse&quot; and was inspired to
+        become my own version of Spider-Man. I implemented vanilla HTML, CSS,
+        JavaScript, and Photoshop.
       </>
     ),
     extras: (
@@ -109,9 +109,9 @@ export const searchResults: Content[] = [
     title: 'Hire Me | Software Engineer',
     description: (
       <>
-        Create this simple but cute website to help those who did not have a
-        portfolio website, using HTML, CSS, Javascript. This was inspired but a
-        instagram reel.
+        I created this simple but cute website to help those who do not have a
+        portfolio website, using HTML, CSS, and JavaScript. This was inspired by
+        an Instagram reel.
       </>
     ),
     extras: <b>Frontend</b>,
@@ -121,7 +121,7 @@ export const searchResults: Content[] = [
     title: 'Desktop Cleaner | Software Engineer',
     description: (
       <>
-        Created a Python script using Watchdog library that helps to
+        Created a Python script using the Watchdog library that helps
         automatically clean up your desktop by moving files into folders named
         after their extensions in your Documents directory.
       </>
@@ -137,8 +137,8 @@ export const searchResults: Content[] = [
     title: 'Macdashboard | Software Engineer',
     description: (
       <>
-        Admin dashboard app using React.js and Syncfusion. This Admin Panel
-        includes one Dashboard, Three Pages, Four Apps, and Seven fully
+        Admin dashboard app using React.js and Syncfusion. This admin panel
+        includes one dashboard, three pages, four apps, and seven fully
         functional charts!
       </>
     ),

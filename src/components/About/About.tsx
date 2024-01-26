@@ -22,10 +22,10 @@ export const About: React.FC = () => {
           {globe}angus-macapella-google.vercel.app
         </div>
         <p className={styles.description}>
-          Angus Macapella is a South African software engineer, web author and
-          cook. He is currently located in <b>Cape Town, ZA</b> and freelancing
-          creative portfolios. He is the Founder of You&apos;re Wrong and,
-          occasionally posts startup applications on Product Hunt. Angus is
+          Angus Macapella is a South African software engineer, web author, and
+          businessman. He is currently located in <b>Cape Town, ZA,</b> ,
+          freelancing creative projects. He is the Founder of You&apos;re Wrong
+          and occasionally posts startup applications on Product Hunt. Angus is
           known for pioneering solutions and pushing the boundaries of
           what&apos;s possible in software engineering. He&apos;s just getting
           started in leaving an indelible mark on the future of technology.{' '}
@@ -54,14 +54,14 @@ export const About: React.FC = () => {
           (2023)
         </div>
         <div className={styles.stat}>
-          <span>Net Worth: </span>$20 USD (2024)
+          <span>Net Worth: </span>$20.3 billion USD (2024)
           <a
             href="https://www.forbes.com/billionaires/"
             target="_blank"
             rel="noreferrer"
           >
             {' '}
-            Forbes
+            delulu
           </a>{' '}
         </div>
 
