@@ -18,7 +18,9 @@ export const About: React.FC = () => {
     <div className={styles.container}>
       <div className={styles.about}>
         <h4>About</h4>
-        <div className={styles.website}>{globe} angusmacapella.com</div>
+        <div className={styles.website}>
+          {globe}angus-macapella-google.vercel.app
+        </div>
         <p className={styles.description}>
           Angus Macapella is a South African software engineer, web author and
           cook. He is currently located in <b>Cape Town, ZA</b> and freelancing
