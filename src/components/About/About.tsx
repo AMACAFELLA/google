@@ -24,11 +24,11 @@ export const About: React.FC = () => {
         <p className={styles.description}>
           Angus Macapella is a South African software engineer, web author and
           cook. He is currently located in <b>Cape Town, ZA</b> and freelancing
-          creative portfolios. He is the Founder of You're Wrong and,
+          creative portfolios. He is the Founder of You&apos;re Wrong and,
           occasionally posts startup applications on Product Hunt. Angus is
-          known for pioneering solutions and pushing the boundaries of what's
-          possible in software engineering. He's just getting started in leaving
-          an indelible mark on the future of technology.{' '}
+          known for pioneering solutions and pushing the boundaries of
+          what&apos;s possible in software engineering. He&apos;s just getting
+          started in leaving an indelible mark on the future of technology.{' '}
         </p>
         <div className={styles.stat}>
           <span>Born: </span>July, 1996 (age{' '}
