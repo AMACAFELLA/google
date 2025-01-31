@@ -10,6 +10,7 @@ import 'src/styles/globals.scss'
 
 import { sleep } from 'src/utils'
 import { Landing } from 'src/screens'
+import { Analytics } from '@vercel/analytics/react'
 
 function GoogleSearch({ Component, pageProps }: AppProps) {
   const [landing, setLanding] = useState(true)
@@ -40,6 +41,7 @@ function GoogleSearch({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="root">
+        <Analytics />
         {landing ? (
           <Landing
             searchText={searchText}
