@@ -1,5 +1,5 @@
 import { linearGradientDef } from '@nivo/core'
-import { ResponsiveLine, Serie } from '@nivo/line'
+import { ResponsiveLine, Serie, Point } from '@nivo/line'
 import { useContext, useMemo } from 'react'
 import {
   backendDataRaw,
@@ -45,7 +45,7 @@ export const SkillChart: React.FC = () => {
       </div>
       <div className={styles.stats}>
         <div>
-          <h1>{history.at(-1).toFixed(2)}</h1> <Percentage value={percent} />
+          <h1>{history.at(-1)?.toFixed(2)}</h1> <Percentage value={percent} />
         </div>
       </div>
       <div className={styles.range}>
@@ -129,7 +129,9 @@ export const SkillChart: React.FC = () => {
             enableGridX={false}
             enableGridY={false}
             pointSize={0}
-            yFormat={(val) => Number(val).toFixed(2)}
+            yFormat={(value: Point['data']['y']) =>
+              typeof value === 'number' ? value.toFixed(2) : String(value)
+            }
             enableSlices="x"
             curve="monotoneX"
           />

@@ -16,7 +16,7 @@ export const Images: NextPage = () => {
           >
             <div className={styles.image}>
               <Image
-                src={`https://source.unsplash.com/${id}`}
+                src={`https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=2864&q=80`} // Match your example URL
                 alt="photography image"
                 fill
                 priority

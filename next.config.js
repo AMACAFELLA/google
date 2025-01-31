@@ -8,6 +8,7 @@ const nextConfig = {
       'avatars.githubusercontent.com',
       'source.unsplash.com',
       'images.unsplash.com',
+      'images.unsplash.com',
       'i1.ytimg.com',
       'sarhfiles.blob.core.windows.net',
       'www.powerchangeslives.com',
@@ -17,6 +18,9 @@ const nextConfig = {
   },
   eslint: {
     ignoreDuringBuilds: true,
+  },
+  experimental: {
+    esmExternals: true,
   },
 }
 

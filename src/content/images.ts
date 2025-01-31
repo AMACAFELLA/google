@@ -1,11 +1,6 @@
 export const images = [
-  '1GgWbP74phY',
-  'hzR9rDXWbqo',
-  'EAW7kDGHbws',
-  'cOkpTiJMGzA',
-  'gH9vt0v6EHY',
-  'y8Ngwq34_Ak',
-  'wMkaMXTJjlQ',
-  'smgTvepind4',
-  'k_T9Zj3SE8k',
+  '1564865878688-9a244444042a',
+  '1552508744-1696d4464960',
+  '1608999383953-d61f5d9c1ace',
+  '1588686031323-ec683d066691',
 ]
