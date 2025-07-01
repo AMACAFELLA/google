@@ -31,22 +31,25 @@ export const Videos: NextPage = () => {
   }, [])
 
   if (loading) {
-    return <div>Loading...</div>
+    return (
+      <div className={styles.container}>
+        <div className={styles.loadingContainer}>
+          <div className={styles.spinner}></div>
+          <div className={styles.loadingText}>
+            Loading videos<span className={styles.loadingDots}></span>
+          </div>
+        </div>
+      </div>
+    )
   }
 
   return (
     <div className={styles.container}>
       <LoadTime count={videos.length} />
       <div className={styles.results}>
-        {loading ? (
-          <div className={styles.skeletonGrid}>
-            {[...Array(6)].map((_, i) => (
-              <div key={i} className={styles.skeletonCard} />
-            ))}
-          </div>
-        ) : (
-          videos.map((video) => <VideoResult key={video.id} video={video} />)
-        )}
+        {videos.map((video) => (
+          <VideoResult key={video.id} video={video} />
+        ))}
       </div>
     </div>
   )
