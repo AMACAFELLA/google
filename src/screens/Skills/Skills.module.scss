@@ -37,24 +37,36 @@
   @include themed-styles {
     h3 {
       color: themed-color(text-high-contrast);
+      margin: 0 0 16px 0;
+      font-size: 18px;
+      font-weight: 500;
     }
   }
 }
 
 .lists {
   @include row;
-  gap: 10px;
+  gap: 20px;
+  margin-top: 24px;
 
   @include mobile {
     flex-direction: column;
+    gap: 16px;
+    margin-top: 16px;
   }
 }
 
 .categories {
   @include row;
   justify-content: space-between;
-  gap: 10px;
+  gap: 20px;
+  margin-bottom: 24px;
 
   overflow-x: scroll;
   @include hide-scroll;
+
+  @include mobile {
+    gap: 16px;
+    margin-bottom: 16px;
+  }
 }
