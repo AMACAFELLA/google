@@ -1,0 +1,136 @@
+@import '/src/styles/base';
+
+.container {
+  @include col;
+  align-items: center;
+  margin: 40px 0;
+  gap: 20px;
+
+  @include mobile {
+    margin: 20px 0;
+    gap: 16px;
+  }
+}
+
+.pagination {
+  @include row;
+  align-items: center;
+  gap: 20px;
+
+  @include mobile {
+    gap: 16px;
+    flex-direction: column;
+  }
+}
+
+.logo {
+  font-family: 'Product Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: -1px;
+  display: flex;
+  align-items: center;
+
+  @include mobile {
+    font-size: 24px;
+  }
+
+  .g {
+    color: #4285f4;
+  }
+
+  .o1 {
+    color: #ea4335;
+  }
+
+  .o2 {
+    color: #fbbc04;
+  }
+
+  .l {
+    color: #34a853;
+  }
+
+  .e {
+    color: #ea4335;
+  }
+}
+
+.pages {
+  @include row;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @include mobile {
+    gap: 4px;
+  }
+}
+
+.page, .prev, .next {
+  padding: 8px 12px;
+  border: none;
+  background: none;
+  font-size: 14px;
+  font-family: 'Product Sans', sans-serif;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  min-width: 36px;
+  text-align: center;
+
+  @include themed-styles {
+    color: themed-color(primary-accent);
+
+    &:hover {
+      background-color: themed-color(button-background);
+    }
+  }
+
+  @include mobile {
+    padding: 6px 10px;
+    font-size: 13px;
+    min-width: 32px;
+  }
+}
+
+.active {
+  @include themed-styles {
+    background-color: themed-color(secondary-accent);
+    color: themed-color(background) !important;
+  }
+
+  &:hover {
+    @include themed-styles {
+      background-color: themed-color(secondary-accent) !important;
+    }
+  }
+}
+
+.prev, .next {
+  font-weight: 500;
+  min-width: auto;
+  
+  @include mobile {
+    font-size: 12px;
+  }
+}
+
+.info {
+  text-align: center;
+  
+  p {
+    margin: 0;
+    font-size: 13px;
+    font-family: 'Product Sans', sans-serif;
+    
+    @include themed-styles {
+      color: themed-color(text-low-contrast);
+    }
+
+    @include mobile {
+      font-size: 12px;
+    }
+  }
+}
