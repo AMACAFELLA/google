@@ -61,7 +61,7 @@ export const searchResults: Content[] = [
     link: 'https://kontent-kid.vercel.app/',
     image: (
       <Image
-        src="/favicon.png"
+        src="/images/favicon.png"
         alt="Kontent Kid logo"
         layout="fill"
         objectFit="contain"
