@@ -21,7 +21,7 @@ export const searchResults: Content[] = [
     link: 'https://www.sarh.org/',
     image: (
       <Image
-        src="https://sarhfiles.blob.core.windows.net/live/images/default-source/about-us/mission-bug417e9a01-44ef-4ef0-be45-36921e6e1338.jpg?sfvrsn=facaa391_3"
+        src="/images/san_antonio_regional_hospital_logo.jpeg"
         alt="San Antonio Regional Hospital logo"
         priority
         fill
@@ -44,6 +44,82 @@ export const searchResults: Content[] = [
       <Image
         src="https://www.powerchangeslives.com/images/POWERLOGO10292021.png"
         alt="Power Changes Lives logo"
+        layout="fill"
+        objectFit="contain"
+        priority
+      />
+    ),
+  },
+  {
+    title: 'Kontent Kid - Perplexity Hackathon (AI Content Creation Assistant)',
+    description: (
+      <>
+        Designed and built AI-powered content creation assistant that reduces YouTube content research and scripting time by up to 50%. Developed full-stack web app using React, TypeScript, Tailwind CSS, and Supabase with 95% uptime. Integrated Perplexity API for AI-driven research and content generation.
+      </>
+    ),
+    extras: <b>React, TypeScript, Supabase, Perplexity API, AI Content Generation</b>,
+    link: 'https://kontent-kid.vercel.app/',
+    image: (
+      <Image
+        src="/favicon.png"
+        alt="Kontent Kid logo"
+        layout="fill"
+        objectFit="contain"
+        priority
+      />
+    ),
+  },
+  {
+    title: 'SponsorCheck - Bolt.new Hackathon (AI-Powered Sponsor Verification)',
+    description: (
+      <>
+        Developed AI-powered platform protecting content creators from scams through data-driven sponsor legitimacy verification. Built with bolt.new, React, TypeScript, and Supabase. Integrated Firecrawl API and Perplexity AI for automated risk assessment, reducing manual vetting time by 60%.
+      </>
+    ),
+    extras: <b>React, TypeScript, Supabase, Bolt.new, AI Integration, Web Scraping</b>,
+    link: 'https://sponsorcheck.netlify.app/',
+    image: (
+      <Image
+        src="/images/sponsorcheck_icon.png"
+        alt="SponsorCheck logo"
+        layout="fill"
+        objectFit="contain"
+        priority
+      />
+    ),
+  },
+  {
+    title: 'Fluendo - Bolt.new Hackathon (AI Language Learning Platform)',
+    description: (
+      <>
+        Created AI-powered interactive language learning platform with gamified role-playing episodes. Developed with bolt.new, React, TypeScript, and Supabase. Integrated Tavus platform for real-time conversations and implemented robust gamification features including hearts, streaks, and leaderboards.
+      </>
+    ),
+    extras: <b>React, TypeScript, Supabase, Zustand, Gamification, AI Integration</b>,
+    link: 'https://devpost.com/software/fluendo?ref_content=user-portfolio&ref_feature=in_progress',
+    image: (
+      <Image
+        src="/images/image.png"
+        alt="Fluendo logo"
+        layout="fill"
+        objectFit="contain"
+        priority
+      />
+    ),
+  },
+  {
+    title: 'Froggy Flight - Bolt.new Hackathon (Physics-Based Game)',
+    description: (
+      <>
+        Conceived and developed unique physics-based game combining airplane piloting with strategic frog launching. Built using bolt.new's Three.js template with 8 distinct frog personalities. Implemented intricate physics for realistic bouncing and impact effects with stunning low-poly graphics.
+      </>
+    ),
+    extras: <b>Game Design, Three.js, TypeScript, Bolt.new, Physics Simulation</b>,
+    link: 'https://www.reddit.com/r/froggyflight/comments/1lba9dp/froggy_flight_launch_frogs_into_the_sky/',
+    image: (
+      <Image
+        src="/images/frog-icon.png"
+        alt="Froggy Flight logo"
         layout="fill"
         objectFit="contain"
         priority
@@ -134,79 +210,14 @@ export const searchResults: Content[] = [
       />
     ),
   },
-  {
-    title: 'Macabeats | Software Engineer',
-    description: (
-      <>
-        Fictional e-commerce store implemented using Next.js, Sanity, and Stripe
-        for processing payments.
-      </>
-    ),
-    extras: (
-      <>
-        <b> CMS, Frontend, Backend</b>
-      </>
-    ),
-    link: 'https://macabeats.netlify.app/',
-  },
-  {
-    title: 'Portfolio-Verse | Software Enigeer',
-    description: (
-      <>
-        I really enjoyed &quot;Across the Spider-Verse&quot; and was inspired to
-        become my own version of Spider-Man. I implemented vanilla HTML, CSS,
-        JavaScript, and Photoshop.
-      </>
-    ),
-    extras: (
-      <>
-        <b>Frontend, Photoshop</b>
-      </>
-    ),
-    link: 'https://portfolioverse.netlify.app',
-  },
-  {
-    title: 'Hire Me | Software Engineer',
-    description: (
-      <>
-        I created this simple but cute website to help those who do not have a
-        portfolio website, using HTML, CSS, and JavaScript. This was inspired by
-        an Instagram reel.
-      </>
-    ),
-    extras: <b>Frontend</b>,
-    link: 'https://hireme-xi.vercel.app/',
-  },
-  {
-    title: 'Desktop Cleaner | Software Engineer',
-    description: (
-      <>
-        Created a Python script using the Watchdog library that helps
-        automatically clean up your desktop by moving files into folders named
-        after their extensions in your Documents directory.
-      </>
-    ),
-    extras: (
-      <>
-        <b>Backend</b>
-      </>
-    ),
-    link: 'https://github.com/AMACAFELLA/desktop_cleaner',
-  },
-  {
-    title: 'Macdashboard | Software Engineer',
-    description: (
-      <>
-        Admin dashboard app using React.js and Syncfusion. This admin panel
-        includes one dashboard, three pages, four apps, and seven fully
-        functional charts!
-      </>
-    ),
-    extras: (
-      <>
-        <b>Frontend</b>
-      </>
-    ),
-    link: 'https://macadashboard.netlify.app/',
-  },
 ]
+
+// Pagination logic
+export const RESULTS_PER_PAGE = 10
+export const totalPages = Math.ceil(searchResults.length / RESULTS_PER_PAGE)
+
+export const getResultsForPage = (page: number) => {
+  const startIndex = (page - 1) * RESULTS_PER_PAGE
+  const endIndex = startIndex + RESULTS_PER_PAGE
+  return searchResults.slice(startIndex, endIndex)
+}
