@@ -13,6 +13,11 @@
 
 .content {
   @include row;
+  
+  // Fix tablet gap issue
+  @media (max-width: 1200px) and (min-width: 768px) {
+    gap: 20px;
+  }
 }
 
 .results {
@@ -34,6 +39,12 @@
       background-color: themed-color(background-contrast);
     }
     margin-bottom: 0;
+  }
+  
+  // Tablet responsive fix
+  @media (max-width: 1200px) and (min-width: 768px) {
+    width: 100%;
+    max-width: 652px;
   }
 }
 
@@ -141,6 +152,11 @@
 }
 
 .info {
+  // Tablet responsive fix - hide on tablet to prevent gap
+  @media (max-width: 1200px) and (min-width: 768px) {
+    display: none;
+  }
+  
   @include mobile {
     display: none;
   }
