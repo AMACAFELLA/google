@@ -1,7 +1,9 @@
 import type { NextPage } from 'next'
 import Image from 'next/image'
-import { About, SearchResult, LoadTime } from 'src/components'
-import { searchResults } from 'src/content'
+import { useRouter } from 'next/router'
+import { useEffect, useState } from 'react'
+import { About, SearchResult, LoadTime, Pagination } from 'src/components'
+import { getResultsForPage, totalPages, searchResults } from 'src/content'
 
 const about = (
   <svg
@@ -17,6 +19,19 @@ const about = (
 import styles from './Home.module.scss'
 
 export const Home: NextPage = () => {
+  const router = useRouter()
+  const [currentPage, setCurrentPage] = useState(1)
+
+  useEffect(() => {
+    // Only access router properties when router is available and ready
+    if (router && router.isReady) {
+      const page = parseInt(router.query.page as string) || 1
+      setCurrentPage(page)
+    }
+  }, [router]) // Depend on the entire router object
+
+  const currentResults = getResultsForPage(currentPage)
+  
   return (
     <div className={styles.container}>
       <LoadTime count={searchResults.length} />
@@ -40,9 +55,14 @@ export const Home: NextPage = () => {
       <div className={styles.content}>
         <div className={styles.results}>
           <About />
-          {searchResults.map((result) => (
+          {currentResults.map((result) => (
             <SearchResult {...result} key={result.title} />
           ))}
+          <Pagination 
+            currentPage={currentPage}
+            totalPages={totalPages}
+            totalResults={searchResults.length}
+          />
         </div>
         <div className={styles.info}>
           <About />
